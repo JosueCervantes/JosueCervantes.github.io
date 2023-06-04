@@ -1,0 +1,428 @@
+<!DOCTYPE html> <!-- Al introducir html y dar enter se forma el esqueleto de HTML 5 que empieza marcando la etiqueta de HTML -->
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- En esta parte de aquí linkeamos Bootstrap tanto el Javascript como el CSS para poder trabajar con elementos del mismo -->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Arctic Monkeys</title> <!-- Este es titulo que saldrá hasta arriba de la página -->
+<style> /* En esta parte de aquí agregué una etiqueta de estilos para partes especificas de la página */
+  .contenedor{ 
+    /* Ponemos . para indicar que se trata de un div el cuál es la primera parte de la página donde viene 
+    el apartado de los boletos y demás*/
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.navbar-brand{ /* En esye caso quise que mi Navbar abarcara este tamaño */
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar-nav{ /* Aquí quise que tuviera una letra de este tamaño los botones de mi navbar con su respectiva tipografia*/
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.centrado{ 
+  /* Este estilo esta enfoncado en donde quiero posicionar el texto principal de Arctic Monkeys 
+  con  el color blanco, tamaño 110px, tipografía y centrado*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 110px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+/* Esta parte de f,i,t,y es simplemente una etiqueta que linkea otra pagina en internet con un color diferente
+cada uno; se pone # porque es indicativa a un id*/
+#f{
+  color: rgb(15, 125, 228);
+}
+#i{
+  color: rgb(250, 0, 187);
+}
+#t{
+  color: rgb(15, 125, 228);
+}
+#y{
+  color: rgb(230, 13, 13);
+}
+/* Estos ultimos id pertenecen a los dos titulos que indican discogafía y ultimo lanzamiento; ambos tienen en el mismo
+estilo centrado, tipografía y tamaño de 60px */
+#titulo2{
+  text-align: center;
+  font-size: 60px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#titulo3{
+  text-align: center;
+  font-size: 60px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</style>
+</head>
+<header> <!-- Nuestro header es una navbar que pertenece a Bootstrap y esta dentro del header y un div -->
+      <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark fixed-top">
+        <div class="container-fluid"> 
+          <!-- La primera parte de la navbar es una imagen que funciona a la vez para recargar la pagina -->
+          <a class="navbar-brand" href="./arctic.html"><img src="./img/albumes/logo3.png" alt=""></a>
+          <!-- Para que quedara separado de la imagen metí dentro de divs los siguientes botones que llevan a otras partes de la pagina -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav"> <!-- Estas las metí en una lista  -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#boletos">Boletos</a> <!-- El primero boton que lleva a la sección de boletos pormedio de un href-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contáctanos</a> <!-- El primero boton que lleva a la sección de footer pormedio de un href-->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body> <!-- Nuestro body contiene toda la objetividad de la pagina-->
+        <div class="contenedor">
+          <img src="./img/AM.jpeg" class="rounded" alt="..."> 
+          <!-- Como ya mencioné esta en la primera parte la imagen de fondo
+          y a la vez cuenta con el titulo principal con su estilo-->
+          <div class="centrado">Arctic Monkeys</div>
+          </div>
+          <div class="album py-5 bg-light" >
+            <div class="container">
+              <div id="boletos" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!-- Aqui empieza el div de la sección de boletos  -->
+                <div class="col">
+                  <!-- Cada evento se divide en un div que tiene una imagen y una explicacion con dos botones y la fecha -->
+                  <div class="card shadow-sm">
+                    <img src="img/usa.png" alt="">
+                    <div class="card-body"> <!-- Aquí indicamos que será una card donde pondremos la informacion del primer concierto -->
+                      <p class="card-text">Arctic Monkeys en Brooklyn, NY, USA. En el
+                        Kings Theatre</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-secondary">Comprar</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-info">Ver boletos de avión</button>
+                        </div>
+                        <small class="text-muted">22 Septiembre</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm"> <!-- Nuestro segundo concierto esta en otro card en otro div con los mismos elementos anteriores -->
+                    <img src="img/brazil.jpg" alt=""> <!-- Los cuales son un texto breve, fecha, dos botones y una imagen ajustada al card -->
+                    <div class="card-body">
+                      <p class="card-text">Arctic Monkeys en Rio de Janeiro, BRZ. En el
+                        Jeunesse Arena.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-secondary">Comprar</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-info">Ver boletos de avión</button>
+                        </div>
+                        <small class="text-muted">4 Noviembre</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"> <!-- Nuevamente ponemos otro card con los mismo elementos pero diferente informacion -->
+                  <div class="card shadow-sm"> <!-- Esta vez en Chile -->
+                    <img src="img/chile.png" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Arctic Monkeys en Santiago, CHILE. En el
+                        Primavera Sound.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-secondary">Comprar</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-info">Ver boletos de avión</button>
+                        </div>
+                        <small class="text-muted">5 Noviembre</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col"> <!-- Nuevamente ponemos otro card con los mismo elementos pero diferente informacion -->
+                  <div class="card shadow-sm"> <!-- Esta vez en Paraguay -->
+                    <img src="img/prg.jpg" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Arctic Monkeys en Asunción, PRG. En el
+                        Kilk Fest.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-secondary">Comprar</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-info">Ver boletos de avión</button>
+                        </div>
+                        <small class="text-muted">10 Noviembre</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"> <!-- Nuevamente ponemos otro card con los mismo elementos pero diferente informacion -->
+                  <div class="card shadow-sm"> <!-- Esta vez en Peru -->
+                    <img src="img/peru.png" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Arctic Monkeys en Lima, PERU. En el
+                        Arena 1.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-secondary">Comprar</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-info">Ver boletos de avión</button>
+                        </div>
+                        <small class="text-muted">15 Noviembre</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"> <!-- Nuevamente ponemos otro card con los mismo elementos pero diferente informacion -->
+                  <div class="card shadow-sm"> <!-- Esta vez en Mexico -->
+                    <img src="img/mexico.png" alt="">   
+                    <div class="card-body">
+                      <p class="card-text">Arctic Monkeys en Mexico City, MX. En el
+                        Corona Capital Fest.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-secondary">Comprar</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary btn-outline-info">Ver boletos de avión</button>
+                        </div>
+                        <small class="text-muted">18 Noviembre</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>        
+              </div> 
+            </div> 
+          </div> 
+          <!-- Aquí termina el primer objetivo de nuestra pagina y para hacerla más separada de la segunda
+          sección agregué dos br para hacer un salto-->
+            <br>
+            <br>
+    <h2 id="titulo3">Último Album "The Car" disponible</h2> <!-- Empezamos la segunda parte de la pagina anunciando el ultimo lanzamiento con un h3 -->
+        <!-- Product section-->
+        <section class="py-5"> <!-- Esta sección también fue obtenida de una página donde solamente tuvimos que editar el texto y añadir una imagen -->
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="./img/albumes/car.jpg" alt="..." /></div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">MX: Envío Gratuito</div>
+                        <h1 class="display-5 fw-bolder">The Car Vinil</h1>
+                        <div class="fs-5 mb-5">
+                            <span class="text-decoration-line-through">$45.00 USD</span>
+                            <span>$40.00 USD</span>
+                        </div>
+                        <p class="lead">Nuevo album de Arctic Monkeys disponible en vinil, compralo aquí</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <h2 id="titulo2">Discografía disponible</h2> <!-- La tercera parte será presentada con un h2 y un salto para hacer distancia -->
+            <br>
+            <br> 
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+              <!-- Este es un carrousel extraído de Bootstrap para 6 imagenes -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner"> <!-- Creamos un div donde pondremos toda la informacion de cada imagen del carrousel -->
+                <div class="carousel-item active"> <!-- Ponemos una imagen y un h1 con el titulo del album y abajo un texto breve descriptivo -->
+                  <img src="./img/albumes/album1.jfif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Whatever people say i am that's what i'm not</h1>
+                    <p>Primer album discográfico de Arctic Monkeys en 2006.</p>
+                  </div>
+                </div>
+                <div class="carousel-item"> <!-- Ponemos una imagen y un h1 con el titulo del album y abajo un texto breve descriptivo -->
+                  <img src="./img/albumes/album2.jfif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Favorite worst nightmare</h1>
+                    <p>Segundo album discográfico de Arctic Monkeys en 2007.</p>
+                  </div>
+                </div>
+                <div class="carousel-item"> <!-- Ponemos una imagen y un h1 con el titulo del album y abajo un texto breve descriptivo -->
+                  <img src="./img/albumes/album3.jfif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Humbug</h1>
+                    <p>Tercer album discográfico de Arctic Monkeys en 2009.</p>
+                  </div>
+                </div>
+                <div class="carousel-item"> <!-- Ponemos una imagen y un h1 con el titulo del album y abajo un texto breve descriptivo -->
+                  <img src="./img/albumes/album4.jfif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Suck it and see</h1>
+                    <p>Cuarto album discográfico de Arctic Monkeys en 2011.</p>
+                  </div>
+                </div>
+                <div class="carousel-item"> <!-- Ponemos una imagen y un h1 con el titulo del album y abajo un texto breve descriptivo -->
+                  <img src="./img/albumes/album5.jfif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>AM</h1>
+                    <p>Quinto album discográfico de Arctic Monkeys en 2013.</p>
+                  </div>
+                </div>
+                <div class="carousel-item"> <!-- Ponemos una imagen y un h1 con el titulo del album y abajo un texto breve descriptivo -->
+                  <img src="./img/albumes/album6.jfif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Tranquility Base Hotel & Casino</h1>
+                    <p>Sexto album discográfico de Arctic Monkeys en 2018.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- El carrousel finaliza con botones para dar hacía a la izquierda o derecha -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+<!-- Aquí también finaliza nuestro body -->
+</body>
+
+<!-- Footer --> <!-- Aquí empieza nuestra parte última de la pagina con su propio id -->
+<footer id="footer" class="bg-dark text-center text-white footer">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center"> <!-- Esta parte del footer es para poner quejas o sugerencias -->
+          <!-- Ponemos un texto en un div indicando el objetivo -->
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2"> <!--  -->
+              <strong>Quejas o sugerencias</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <!-- Un inputo que funcionara para poner el texto -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <!-- Ponemos el botón que podría ser programado para enviarse al correo -->
+            <button type="submit" class="btn btn-outline-info">
+              Enviar
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Lo siguiente es poner una sección dando una conclusión a manera biográfica de quienes son Arctic Monkeys -->
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Arctic Monkeys es un grupo de Sheffield (Inglaterra) formado en sus orígenes por el guitarrista, <br>
+        cantante y principal compositor Alex Turner (nacido el 6 de enero de 1986), el guitarrista Jamie Cook (nacido el 8 de julio de 1985), <br>
+        el bajista Andy Nicholson y el batería Matt Helders (nacido el 7 de mayo de 1986). <br>
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <!-- La siguiente sección del footer es para poner los links en redes sociales -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row"> <!-- Ponemos unn h4 con el titulo y 3 br para marcar distancia -->
+        <h4 class="text-uppercase">Redes Sociales</h4><br><br><br>
+        <!--Grid column-->
+        <!-- El primer div funciona para indicar la primer red social con su correspondiente link -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" id="f">Facebook</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.facebook.com/ArcticMonkeys" class="text-white" target="_blank">facebook.com</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <!-- El segundo div funciona para indicar la segunda red social con su correspondiente link -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" id="i">Instagram</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.instagram.com/arcticmonkeys/?hl=es" class="text-white" target="_blank">instagram.com</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <!-- El tercer div funciona para indicar la tercera red social con su correspondiente link -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" id="t">Twitter</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://twitter.com/ArcticMonkeys" class="text-white" target="_blank">twitter.com</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <!-- El cuarto div funciona para indicar la cuarta red social con su correspondiente link -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" id="y">Youtube</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.youtube.com/channel/UC-KTRBl9_6AX10-Y7IKwKdw" class="text-white" target="_blank">youtube.com</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <!-- Por último solo ponemos un div para indicar la sección de derechos de autor con style sencillo -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    Josue Cervantes
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Aquí termina el footer -->
+<!-- Footer -->
+<!-- Aquí termina la página -->
+</html>
