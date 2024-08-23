@@ -1,0 +1,72 @@
+    <!-- -->
+    <section id="testimonial" class="section-padding bg-fixed bg-white overlay" >
+        <div class="container">
+            <div class="section-content" >
+                <!-- Titulo al paso de los anios -->
+                <div class="heading-section text-center">
+                    <h2>
+                        Al paso de los años...
+                    </h2>
+                    <br>
+                    <br>
+                </div>
+                <!-- Navegacion o carrusel de anios-->
+                <div class="row">
+                    <!-- Testimonial -->
+                    <div class="testi-content testi-carousel owl-carousel">
+                        <div class="testi-item text-center">
+                            <!-- 2018 -->
+                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                            <br>
+                            <h4 class=""><br><b>El 2018</b><br><br> Mi primer comienzo en el mundo de la informática, aprendí Programación Básica y POO en lenguaje C, así como diseño digital</h4>
+                            <div class="testi-meta-inner d-flex justify-content-center align-items-center"> 
+                            </div>
+                        </div>
+                        <div class="testi-item text-center">
+                            <!-- 2019 -->
+                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                            <h4 class=""><br><b>El 2019</b><br><br> Comencé a hacer proyectos pequeños en C y C++, aprendí sobre gestión y creación de base de datos en SQL Server</h4>
+                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            </div>
+                        </div>
+                        <div class="testi-item text-center">
+                            <!-- 2020 -->
+                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                            <h4 class=""><br><b>El 2020</b><br><br> En este punto elaboré mis primeros proyectos en HTML, CSS y JS <br><br>A la par inicié con el desarrollo de desktop apps para Windows. </h4>
+                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            </div>
+                        </div>
+                        <div class="testi-item text-center">
+                            <!-- 2021 -->
+                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                            <h4 class=""><br><b>EL 2021</b><br><br> EL año que entré a la universidad. <br><br> También en 2021 egresé como Técnico en Informática</h4>
+                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            </div>
+                        </div>
+                        <div class="testi-item text-center">
+                            <!-- 2022 -->
+                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                            <h4 class=""><br><b>El 2022</b><br><br> El año que comencé con PHP y frameworks para el desarrollo web <br><br> Además de aprender C#, las bases de datos ahora las trabajé en MySQL Server</h4>
+                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            </div>
+                        </div>
+                        <div class="testi-item text-center">
+                            <!-- 2023 -->
+                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                            <h4 class=""><br><b>El 2023</b><br><br> En este año elaboré proyectos más concisos en Python, JS, C#, MongoDB y Android Studio <br><br> Entre otros, desarrollé proyectos de realidad virtual y aumentada en equipo</h4>
+                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            </div>
+                        </div>
+                        <div class="testi-item text-center">
+                            <!-- 2024 -->
+                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                            <h4 class=""><br><b>El 2024</b><br><br> En este año trabajé en otra empresa donde era más demandante el desarrollo de software <br><br> Aquí estuve en varios cursos de software y obtuve más experiencia en redes</h4>
+                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Testimonial -->
+                </div>
+            </div>
+        </div>
+    </section>
